@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выбор языка / Language selection</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f4f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .title {
+      font-size: 17px;
+      font-weight: 500;
+      color: #1a1a1a;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      border: 1px solid #e0dfd8;
+      background: #ffffff;
+      cursor: pointer;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .btn:hover {
+      background: #f5f4f0;
+      border-color: #b0afa8;
+    }
+
+    .flag {
+      font-size: 28px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .btn-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .btn-label {
+      font-size: 15px;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    .btn-hint {
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <p class="title">
+      Which survey language do you prefer?<br>
+      На каком языке вы хотите пройти опрос?
+    </p>
+    <div class="btns">
+      <a class="btn" href="https://forms.yandex.ru/u/69db219184227c5d6ae807c7" target="_blank">
+        <span class="flag">🇷🇺</span>
+        <div class="btn-text">
+          <span class="btn-label">Русский</span>
+          <span class="btn-hint">Пройти опрос на русском языке</span>
+        </div>
+      </a>
+      <a class="btn" href="https://yandex.ru/poll/nrfidMf5a5BuuwCcSEvSU" target="_blank">
+        <span class="flag">🇬🇧</span>
+        <div class="btn-text">
+          <span class="btn-label">English</span>
+          <span class="btn-hint">Take the survey in English</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
